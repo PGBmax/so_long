@@ -94,7 +94,8 @@ static void	ft_hook2(mlx_key_data_t key_data, t_game *game)
 
 void	ft_hook(mlx_key_data_t key_data, t_game *game)
 {
-	if ((key_data.action != MLX_PRESS || game->victory != 0)
+	if (((key_data.action != MLX_PRESS && key_data.action != MLX_REPEAT)
+		|| game->victory != 0)
 		&& key_data.key != MLX_KEY_ESCAPE)
 		return ;
 	else if (key_data.key == MLX_KEY_ESCAPE)

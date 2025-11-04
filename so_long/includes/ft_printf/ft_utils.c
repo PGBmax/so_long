@@ -104,11 +104,6 @@ int	ft_puthexa_uol(unsigned int n, int uporlow)
 		return (ft_putchar('0'));
 	if (!n)
 		return (ft_putstr("(nil)"));
-	if (n < 0)
-	{
-		len += ft_putchar('-');
-		n *= -1;
-	}
 	if (n >= 16)
 		len = ft_puthexa_uol(n / 16, uporlow);
 	len++;
