@@ -6,7 +6,7 @@
 /*   By: pboucher <pboucher@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:06:39 by pboucher          #+#    #+#             */
-/*   Updated: 2026/04/13 15:20:48 by pboucher         ###   ########.fr       */
+/*   Updated: 2026/08/30 19:18:29 by pboucher         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -206,4 +206,12 @@ void			ft_textures_player(t_textures *tex, t_game *game);
 
 /*	textures/ft_tex_walls.c	*/
 void			ft_textures_walls(t_textures *tex, t_game *game);
+
+int		ft_abs(int n);
+int		ft_opposite(int dir);
+void	ft_ghost_priority(int dx, int dy, int *order);
+void	ft_ghost_flee(int *dx, int *dy);
+void	ft_ghost_patrol(int max_x, int max_y, int *dx, int *dy);
+
+
 #endif

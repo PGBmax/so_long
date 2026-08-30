@@ -27,8 +27,9 @@ SOURCESBONUS =	bonus/flood_fill.c \
 				bonus/frames/ft_collec.c \
 				bonus/frames/ft_digit.c \
 				bonus/frames/ft_player.c \
-				bonus/moves/ft_ghost_moves.c \
-				bonus/moves/ft_ghost_moves2.c \
+				bonus/moves/blinky_ghost_bonus.c \
+				bonus/moves/inky_pinky_ghosts_bonus.c \
+				bonus/moves/ghost_utils_bonus.c \
 				bonus/moves/ft_hook.c \
 				bonus/moves/ft_utils_ghost.c \
 				bonus/ft_loops.c \
